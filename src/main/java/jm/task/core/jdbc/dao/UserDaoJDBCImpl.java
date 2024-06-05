@@ -6,11 +6,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static jm.task.core.jdbc.util.Util.getConnection;
+
+
 
 public class UserDaoJDBCImpl implements UserDao {
 
-    private Connection connection = getConnection();
+    private Connection connection;
 
     public UserDaoJDBCImpl() {
     }
